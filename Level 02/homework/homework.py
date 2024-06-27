@@ -10,11 +10,13 @@ name = "saba"
 surmane = "jaoshvili"
 age = "19 years old"
 
+
 print(name + " " + surmane + " " + age)
 
 #parent name
 name = "kaxa"
 surmane = "jaoshvili"
 age = "58 years old"
+
 
 print(name + " " + surmane + " " + age)

@@ -1,4 +1,5 @@
 num1 = int(input("enter the number: "))
+
 if num1 == 2:
     print("even")
 if num1 == 4:
