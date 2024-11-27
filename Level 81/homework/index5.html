@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    #rotatingBox {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    transition: transform 1s ease-in-out;
+    }
+
+    #rotatingBox.rotate {
+    transform: rotate(360deg);
+    }
+    </style>
+
+</head>
+<body>
+
+    <button id="rotateButton">Rotate</button>
+    <div id="rotatingBox">Rotate Me!</div>
+
+   
+    <script>
+    const rotateButton = document.getElementById("rotateButton");
+    const rotatingBox = document.getElementById("rotatingBox");
+
+    rotateButton.addEventListener("click", () => {
+    rotatingBox.classList.toggle("rotate");
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    #slideBox {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    position: relative;
+    left: -200px;
+    transition: left 1s ease-in-out;
+    }
+
+    #slideBox.active {
+    left: 0;
+    }
+    </style>
+
+</head>
+<body>
+
+    <button id="slideButton">Slide In</button>
+    <div id="slideBox">Slide Me!</div>
+    
+    <script>
+    const slideButton = document.getElementById("slideButton");
+    const slideBox = document.getElementById("slideBox");
+
+    slideButton.addEventListener("click", () => {
+    slideBox.classList.toggle("active");
+    });
+    </script>
+    
+</body>
+</html>

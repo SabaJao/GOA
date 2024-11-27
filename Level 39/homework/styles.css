@@ -1,0 +1,48 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.box1 {
+    width: 80%;
+}
+
+.box2 {
+    width: 70%;
+}
+
+.box3 {
+    width: 60%;
+}
+
+.box4 {
+    width: 50%;
+}
+
+.box5 {
+    width: 40%;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}

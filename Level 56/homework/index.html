@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>სურათის ანიმაცია</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <img id="myImage" src="image1.jpg" alt="სურათი">
+
+    <button onclick="changeImage('image1.jpg')">სურათი 1</button>
+    <button onclick="changeImage('image2.png')">სურათი 2</button>
+    <button onclick="changeImage('image3.png')">სურათი 3</button>
+    <button onclick="changeImage('image4.png')">სურათი 4</button>
+
+    <script>
+        function changeImage(newImage) {
+            document.getElementById("myImage").src = newImage;
+        }
+    </script>
+</body>
+</html>

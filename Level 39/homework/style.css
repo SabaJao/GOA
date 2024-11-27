@@ -1,0 +1,46 @@
+.dotted {
+    text-decoration: dotted;
+}
+
+.dashed {
+    text-decoration: dashed;
+}
+
+.wavy {
+    text-decoration: wavy;
+}
+
+.double {
+    text-decoration: double;
+}
+
+.green-underline {
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+
+.red-overline {
+    text-decoration: overline;
+    text-decoration-color: red;
+}
+
+.blue-line-through {
+    text-decoration: line-through;
+    text-decoration-color: blue;
+}
+
+.purple-dotted-underline {
+    text-decoration: underline dotted;
+    text-decoration-color: #800080; /* მეწამული HEX კოდი */
+}
+
+.orange-double-overline {
+    text-decoration: overline double;
+    text-decoration-color: #FFA500; /* ნარინჯისფერი HEX კოდი */
+}
+
+.custom-style {
+    text-decoration: wavy underline;
+    text-decoration-color: rgb(0, 128, 128); /* ნაცრისფერი RGB კოდი */
+    text-decoration-style: double;
+}

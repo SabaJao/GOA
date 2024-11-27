@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    #fadeBox {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    }
+
+    #fadeBox.visible {
+    opacity: 1;
+    }
+
+    #fadeBox.hidden {
+    opacity: 0;
+    }
+    </style>
+
+</head>
+<body>
+
+    <button id="fadeButton">Fade In / Fade Out</button>
+    <div id="fadeBox" class="hidden">Fade Me!</div>
+
+    <script>
+    const fadeButton = document.getElementById("fadeButton");
+    const fadeBox = document.getElementById("fadeBox");
+
+    fadeButton.addEventListener("click", () => {
+    fadeBox.classList.toggle("visible");
+    fadeBox.classList.toggle("hidden");
+    });
+    </script>
+
+</body>
+</html>

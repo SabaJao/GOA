@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    #text {
+    font-size: 16px;
+    transition: font-size 1s ease-in-out;
+    }
+
+    #text.grow {
+    font-size: 32px;
+    }
+    </style>
+
+</head>
+<body>
+    
+    <button id="resizeButton">Resize Text</button>
+    <p id="text">Watch me grow!</p>
+
+    
+    <script>
+    const resizeButton = document.getElementById("resizeButton");
+    const text = document.getElementById("text");
+
+    resizeButton.addEventListener("click", () => {
+    text.classList.toggle("grow");
+    });
+    </script>
+
+</body>
+</html>

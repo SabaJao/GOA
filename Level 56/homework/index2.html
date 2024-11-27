@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript მაგალითი</title>
+</head>
+<body>
+    <button>დააჭირე მე</button>
+    <p>ეს არის აბზაცი.</p>
+    <img src="image.jpeg" alt="სურათი">
+
+    <script>
+        // ვიპოვოთ ყველა button, p და img ელემენტი
+const buttons = document.getElementsByTagName('button');
+const paragraphs = document.getElementsByTagName('p');
+const images = document.getElementsByTagName('img');
+
+// გავაკეთოთ რაღაც თითოეულ ელემენტზე
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].textContent = 'ახალი ტექსტი ღილაკზე'; // ვცვლით ღილაკის ტექსტს
+    buttons[i].style.backgroundColor = 'lightblue'; // ვცვლით ღილაკის ფონის ფერს
+}
+
+for (let i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].style.fontSize = '24px'; // ვცვლით აბზაცის ტექსტის ზომას
+}
+
+for (let i = 0; i < images.length; i++) {
+    images[i].style.width = '300px'; // ვცვლით სურათის სიგანეს
+    images[i].alt = 'ახალი ალტერნატიული ტექსტი'; // ვცვლით სურათის alt ატრიბუტს
+}
+    </script>
+</body>
+</html>
